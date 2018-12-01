@@ -1,25 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import "./styles.css";
+import Counter from "./counterApp";
 
-const numArr = [1, 2, 3, 4, 5, 6, 7];
-const list = numArr.map(numbers => (
-  <p>
-    <li>{numbers}</li>
-  </p>
-));
-
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>List Task</h1>
-        <h1>
-          <ul>{list}</ul>
-        </h1>
-        >
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello Hiration Interns</h1>
+      <h2>Lets create some miracle!</h2>
+      <Counter />
+    </div>
+  );
 }
 
 const rootElement = document.getElementById("root");
